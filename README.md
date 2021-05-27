@@ -1,8 +1,6 @@
 # Proyectos-Publicos
 La estructura del repositorio esta organizada por lenguajes de programación y por tarjetas de desarrollo.
 
-[<img align="left" alt="medium" src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" />]
-
 Por un lado en la carpeta de Phyton encontrarás automatizaciónes de procesos que he ido realizando conforme he ido necesitando y que considero que pueden ser útiles para otras personas.
 
 En la carpeta de Arduino encontrarás proyectos desarrollados con cualquier modelo de Arduino.
@@ -13,6 +11,8 @@ En la carpeta de STM32 encontrarás proyectos desarrollados con este microcrontr
 
 En la carpeta de Apuntes podrás encontrar apuntes de la carrera de INGENIERÍA ELÉCTRICA, basicamente son resumenes que he ido desarrollando durante el estudio.
 
+
+<img align="left" alt="medium" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" />
 https://www.instagram.com/makergaragediy/
 
 
