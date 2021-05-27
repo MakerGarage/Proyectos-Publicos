@@ -1,0 +1,244 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amssymb, amsmath, siunitx}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{svg}
+\usepackage{tcolorbox}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\setlength{\tabcolsep}{25pt}
+\renewcommand{\arraystretch}{1.5}
+
+\title{Adimensionales}
+\author{Antonio Escámez Álvarez}
+\date{Mayo 2021}
+
+
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\setcounter{section}{-1}
+\section{Magnitudes expresadas en magnitudes fundamentales}
+Las magnitudes fundamentales son masa [kg] longitud [m] y tiempo [s], cualquier otra unidad puede expresarse en base a las unidades fundamentales.
+
+\begin{center}
+\begin{tabular}{ c | c | c | c}
+  Magnitud  & Simbolo  & Unidades  & Dimensión \\
+   \hline
+    Longitud & L   & $m$  & L 
+    \\\hline
+    
+    Área & A  & $m^2$  & $L^2$ 
+    \\\hline
+    
+    Volúmen & V  & $m^3$  & $L^3$
+    \\\hline
+    
+    Tiempo & t & $s$  & T 
+    \\\hline
+    
+    Velocidad & U  & $\frac{m}{s}$  & L$T^{-1}$
+    \\\hline
+    
+    Aceleración & a & $\frac{m}{s^2}$ & L$T^{-2}$ 
+    \\\hline
+    
+    Ángulo & $\alpha$ & $^{\circ}$ & 1
+    \\\hline
+    
+   Velocidad angular & $\Omega$ & $\frac{1}{s}$ & $T^{-1}$
+   \\\hline
+   
+    Masa & $m$ & $kg$ & $M$
+    \\\hline
+    
+    Densidad & $\rho$ & $\frac{kg}{m^3}$ & $ML^{-3}$
+    \\\hline
+    
+    Viscosidad & $\mu$ & $\frac{kg}{m s}$ & $M^{}L^{-1}T^{-1}$
+    \\\hline
+    
+    Presión & $p$ & $\frac{kg}{m s^2}$ & $M^{}L^{-1}T^{-2}$
+    \\\hline
+    
+    Fuerza & $F$ & $\frac{kg m}{s^2}$ & $M^{}L^{}T^{-2}$
+    \\\hline
+    
+    Momento / Par & $M$ & $\frac{kg m^2}{s^2}$ & $M^{}L^{2}T^{-2}$
+    \\\hline
+    
+    Potencia & $\dot{W}$ & $\frac{kg m^2}{s^3}$ & $M^{}L^{2}T^{-3}$
+    \\\hline
+    
+    Trabajo / Energía & E & $\frac{kg m^2}{s^2}$ & $M^{}L^{2}T^{-2}$
+  
+\end{tabular}
+\end{center}
+
+ \newpage
+\section{Paso a paso}
+\subsection{Paso 1 - Identificar las variables del problema}
+Normalmente nos dice el enunciado que la potencia, o la velocidad o cualquier otra magnitud depende de otras magnitudes es decir por poner un ejemplo, podemos decir que la Presión depende de la Velocidad, de la masa, de la viscosidad etc...
+\\
+
+Por ejemplo:
+$$
+\dot{W} = \dot{W} \left(L,\rho,\mu,g,m,U \right)
+$$
+
+\subsection{Paso 2 - Escribir nuestras magnitudes en función de las fundamentales}
+La primera columna corresponde a la magnitud que queremos calcular.
+\begin{center}
+\begin{tabular}{ c | c | c | c | c | c | c | c}
+  & \cellcolor{red!25}$\dot{W}$ & L & U & $\rho$ & $\mu$ & g & m\\
+    \hline
+    M & 1 & 0 & 0  & 1 & 1 & 0 & 1 \\
+    L & 2 & 1 & 1 & -3 & -1 & 1 & 0\\
+    T & -3 & 0 & -1 & 0 & -1 & -2 & 0\\
+ \end{tabular}
+ \end{center}
+ 
+
+ \subsection{Paso 3 - Seleccionar nuestras variables características}
+ Para seleccionar nuestras variables características tenemos que escoger:
+ \begin{itemize}
+     \item Característica del fluido ($\rho$, $\mu$) 
+     \item Característica del flujo (U,Q,$\Omega$)
+     \item Característica geométrica (L,D)
+ \end{itemize}
+ Fluido $\xrightarrow{}$ Lo que va a fluir (agua, aceite etc)
+ \\
+ Flujo $\xrightarrow{}$ Como fluye (velocidad, temperatura etc)
+ \\
+ Característica geométrica $\xrightarrow{}$ Por donde fluye (Longitud, diámetro etc)
+ \\
+ 
+ \begin{center}
+\begin{tabular}{ c | c | c | c | c | c | c | c}
+  & \cellcolor{red!25}$\dot{W}$ & \cellcolor{blue!25}L & \cellcolor{blue!25}U & \cellcolor{blue!25}$\rho$ & $\mu$ & g & m\\
+    \hline
+    M & 1 & 0 & 0  & 1 & 1 & 0 & 1 \\
+    L & 2 & 1 & 1 & -3 & -1 & 1 & 0\\
+    T & -3 & 0 & -1 & 0 & -1 & -2 & 0\\
+ \end{tabular}
+ \end{center}
+ 
+ \subsection{Paso 4 - Verificar que son linealmente independientes}
+ Tenemos que hacer el determinante y verificar que es distinto de 0. En caso de no serlo tenemos que coger otra variable para que sean linealmente independientes.
+ \begin{equation}
+\begin{vmatrix}
+0 &  0 & 1\\
+1 & 1 & -3\\
+0 & -1 & 0
+\end{vmatrix}
+= -1 \not = 0
+\end{equation}
+
+\subsection{Paso 5 - Calcular el Teorema de PI}
+El teorema de pi nos permite saber cuantos grupos pi tenemos que calcular
+n = $m - k$
+\\
+
+m = numero de variables (6 en nuestro caso)
+\\
+k = rango de la matriz (3 en nuestro caso)
+
+\subsection{Paso 6 - Crear los grupos PI}
+Siempre el primer grupo pi $pi_0$ corresponde a la magnitud a estudiar en nuestro caso $\dot{W}$ y se relaciona con las magnitudes que hemos seleccionado (azul)
+\\
+
+Ejemplo general para $\dot{W}$ y para L.
+\\
+\vspace{0.2cm}
+$\pi_0$ = $\dot{W} \cdot \left[L \right]^a \cdot \left[U \right]^b \cdot \left[\rho \right]^c$
+\\
+\vspace{0.2cm}
+$\pi_1$ = L $\cdot \left[L \right]^a \cdot \left[U \right]^b \cdot \left[\rho \right]^c$
+
+\subsection{Paso 7 - Resolver cada grupo PI}
+Vamos a resolver el grupo $\pi_0$
+$$
+\pi_0 = \dot{W} \cdot \left[L \right]^a \cdot \left[U \right]^b \cdot \left[\rho \right]^c
+$$
+
+$$
+M^{0}L^{0}T^{0} = M^{}L^{2}T^{-3} \cdot \left[M^{0}L^{1}T^{0} \right]^a \cdot \left[M^{0}L^{}T^{-1} \right]^b \cdot \left[M^{1}L^{-3}T^{0} \right]^c
+$$
+\vspace{0.3cm}
+Igualamos M con M L con L y T con T.
+
+$
+\left.
+\begin{array}{rcl}
+    0 & = & 1+c\\
+    0 & = & 2+a+b-3c \\
+    0 & = & -3-b
+\end{array}
+\right\}
+\xrightarrow{}
+\begin{array}{rcl}
+    a = -3 \\
+    b = -2 \\ 
+    c = -1
+\end{array}
+$
+Sustituimos los valores de a b y c.
+$$
+\pi_0 = \dot{W} \cdot \left[L \right]^{-3} \cdot \left[U \right]^{-2} \cdot \left[\rho \right]^{-1}
+$$
+
+$$
+\pi_0 = \frac{\dot{W}}{L^3 U^2 \rho}
+$$
+
+\textbf{Importante}:
+\\
+
+\underline{Reynolds}
+$$
+\pi_x = \frac{V \rho D}{\mu} = \text{Re}
+$$
+$$
+\pi_x = \frac{\mu}{V \rho D} = \frac{1}{\text{Re}} = Re
+$$
+
+\underline{Froude}
+$$
+\pi_x = \frac{U^2}{g L} = \text{Fr}
+$$
+$$
+\pi_x = \frac{g L}{U^2} = \frac{1}{\text{Fr}} = Fr
+$$
+
+\subsection{Paso 8 - Resolver el ejercicio}
+Una vez tenemos todos los grupos PI necesarios procedemos a resolver:
+
+$$
+\pi_0 = f\left(\pi_1,\pi_2,\pi_3 \right)
+$$
+
+$$
+\frac{\dot{W}}{L^3 U^2 \rho}= f\left(Re,Fr,\frac{m}{\rho L^3}\right)
+$$
+
+\end{document}
