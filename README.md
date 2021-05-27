@@ -1,4 +1,4 @@
-# Estructura de carpetas
+# Estructura de carpetas 📁
 _La estructura del repositorio esta organizada por lenguajes de programación y por tarjetas de desarrollo._
 
 Por un lado en la carpeta de Phyton encontrarás automatizaciónes de procesos que he ido realizando conforme he ido necesitando y que considero que pueden ser útiles para otras personas.
