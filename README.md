@@ -15,6 +15,9 @@ En la carpeta de ESP32 encontrarás proyectos desarrollados con este microcrontr
 ## [STM32](https://github.com/MakerGarage/Proyectos-Publicos/tree/main/STM32) 🌕💻
 En la carpeta de STM32 encontrarás proyectos desarrollados con este microcrontrolador.
 
+## [MATLAB](https://github.com/MakerGarage/Proyectos-Publicos/tree/main/Matlab)
+En la carpeta de Matlab encontrarás proyectos desarrollados en este entorno.
+
 ## [Apuntes](https://github.com/MakerGarage/Proyectos-Publicos/tree/main/Apuntes) 📝
 En la carpeta de Apuntes podrás encontrar apuntes de la carrera de INGENIERÍA ELÉCTRICA, basicamente son resumenes que he ido desarrollando durante el estudio.
 
