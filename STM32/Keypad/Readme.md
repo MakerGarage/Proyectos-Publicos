@@ -1,4 +1,4 @@
-Este proyecto consiste en reutilizar un controlador de volumen de aliexpress el cual se puede reprogramar para que emule un teclado y envie los comandos que queramos, en mi caso esta configurado para alternar la salida de audio entre altavoz y cascos, asi como para cambiar entre pestañas y poder mutearte en las reuniones de google meet.
+Este proyecto consiste en reutilizar un [controlador de volumen](https://a.aliexpress.com/_uZEKtT) de aliexpress el cual se puede reprogramar para que emule un teclado y envie los comandos que queramos, en mi caso esta configurado para alternar la salida de audio entre altavoz y cascos, asi como para cambiar entre pestañas y poder mutearte en las reuniones de google meet.
 
 <p align="center">
   <img alt="" src="https://instagram.fsvq4-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/146876809_416346079625255_7294764331149685535_n.jpg?tp=1&_nc_ht=instagram.fsvq4-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=Q_paDLDXAmkAX_G9P9U&edm=AABBvjUBAAAA&ccb=7-4&oh=28d3e55c08756476c3712357399120cf&oe=60B76DFA&_nc_sid=83d603" width="45%">
