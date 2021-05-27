@@ -11,8 +11,7 @@ En la carpeta de STM32 encontrarás proyectos desarrollados con este microcrontr
 
 En la carpeta de Apuntes podrás encontrar apuntes de la carrera de INGENIERÍA ELÉCTRICA, basicamente son resumenes que he ido desarrollando durante el estudio.
 
-<a>
-  [link]("https://www.instagram.com/makergaragediy/"){:target="_blank"}
+<a href="https://www.instagram.com/makergaragediy/">
   <img width="40" border="0" align="center"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"/>
 </a>
 
