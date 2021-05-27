@@ -6,16 +6,16 @@ La estructura del repositorio esta organizada por lenguajes de programación y p
 
 Por un lado en la carpeta de Phyton encontrarás automatizaciónes de procesos que he ido realizando conforme he ido necesitando y que considero que pueden ser útiles para otras personas.
 
-## Arduino 🟦💻
+## [Arduino]https://github.com/MakerGarage/Proyectos-Publicos/tree/main/Arduino) 🟦💻
 En la carpeta de Arduino encontrarás proyectos desarrollados con cualquier modelo de Arduino.
 
-## ESP32 📶💻
+## [ESP32] (https://github.com/MakerGarage/Proyectos-Publicos/tree/main/ESP32) 📶💻
 En la carpeta de ESP32 encontrarás proyectos desarrollados con este microcrontrolador el cual dispone de conexión wifi y bluetooth.
 
 ## [STM32](https://github.com/MakerGarage/Proyectos-Publicos/tree/main/STM32) 🌕💻
 En la carpeta de STM32 encontrarás proyectos desarrollados con este microcrontrolador.
 
-## Apuntes
+## [Apuntes] (https://github.com/MakerGarage/Proyectos-Publicos/tree/main/Apuntes)
 En la carpeta de Apuntes podrás encontrar apuntes de la carrera de INGENIERÍA ELÉCTRICA, basicamente son resumenes que he ido desarrollando durante el estudio.
 
 
