@@ -1,3 +1,0 @@
-HCSR04	KEYWORD1
-medirDistancia	KEYWORD2
-medirDistanciaPromedio	KEYWORD2
